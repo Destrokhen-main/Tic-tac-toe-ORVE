@@ -1,0 +1,39 @@
+@import url("./assets/font/font.scss");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "font";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__body {
+    display: flex;
+    margin-top: 40px;
+    gap:20px;
+
+    &__game-bord {
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px;
+    }
+  }
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-label {
+    font-size: 60px;
+  }
+}
